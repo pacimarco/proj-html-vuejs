@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <MyHeader/>
+    <MyHeader :headerLinks="headerLink"/>
     <MyMain/>
     <MyFooter/>
   </div>
@@ -18,11 +18,51 @@ export default {
     MyHeader,
     MyMain,
     MyFooter,
+  },
+  data() {
+    return {
+      headerLink: [
+        {
+          text: 'Home',
+          link: '#',
+        },
+        {
+          text: 'Pages',
+          link: '#',
+        },
+        {
+          text: 'Courses',
+          link: '#',
+        },
+        {
+          text: 'Features',
+          link: '#',
+        },
+        {
+          text: 'Blog',
+          link: '#',
+        },
+        {
+          text: 'Shop',
+          link: '#',
+        },
+      ],
+}
   }
 }
+  
 </script>
 
 <style lang="scss">
 @import '~@fortawesome/fontawesome-free/css/all.css';
+
+body{
+  font-family: sans-serif;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 </style>
