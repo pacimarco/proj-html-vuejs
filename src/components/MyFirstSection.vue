@@ -2,7 +2,7 @@
   <section>
     <div class="sect-1">
     <div class="text">
-        <h6>EVERYTHING IN MAXCOACH</h6>
+        <h6>EVERYTHING IN <strong>MAXCOACH</strong> </h6>
         <h3>Learn about our <span>Work Culture</span> at MaxCoach</h3>
         <p>Spend some time to visit our website or head office and discover our courses, enrollment procedure, and registration deadline. We're opening new classes every beginning of each month.</p>
         <p>Have questions? <a href="#">Get a free guide <i class="fa-solid fa-arrow-right"></i></a></p>
@@ -94,8 +94,19 @@ name:"MyFirstSection",
     flex-direction: column;
     justify-content: space-evenly;
 
+    h6{
+        color:darkgray;
+        
+        
+    }
+    strong{
+        font-weight: bold;
+        color: rgb(28, 22, 22);
+    }
+
     p{
         font-size: 12px;
+        color: darkgrey;
     }
 
     span{
