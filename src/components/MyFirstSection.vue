@@ -1,5 +1,6 @@
 <template>
-  <section class="sect-1">
+  <section>
+    <div class="sect-1">
     <div class="text">
         <h6>EVERYTHING IN MAXCOACH</h6>
         <h3>Learn about our <span>Work Culture</span> at MaxCoach</h3>
@@ -14,7 +15,26 @@
         <div class="green-greed"></div>
         <div class="small-img"></div>
     </div>
+</div>
+        
+    
+    <div class="down-1">
+        <div>
+            <h1>129+</h1>
+            <h5>ENROLLED LEARNERS</h5>
+        </div>
+        <div>
+            <h1>80</h1>
+            <h5>FINISHED SESSIONS</h5>
+        </div>
+        <div>
+            <h1>4%</h1>
+            <h5>SATISFACTION RATE</h5>
+        </div>
+    </div>
+
   </section>
+  
 </template>
 
 <script>
@@ -53,6 +73,15 @@ name:"MyFirstSection",
     z-index: 200;
 
 }
+.creative-circle{
+    background-image: url('../assets/img/maxcoach-shape-02.png');
+    background-size: cover;
+    position: absolute;
+    right: 40px;
+    bottom: 100px;
+    width:70px;
+    height: 70px;
+}
 .sect-1{
     height: 480px;
     width: 80%;
@@ -89,4 +118,19 @@ name:"MyFirstSection",
         color: #febc4d;
     }
 }
+.down-1{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+
+    h1{
+        margin-bottom: 20px;
+        color: #1fad95;
+        
+    }
+}
+
 </style>
