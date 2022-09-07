@@ -55,7 +55,7 @@ props: {
 .test-container{
     display: flex;
     width: 80%;
-    margin: auto;
+    margin:50px auto;
 
     .test-left{
         width: 35%;
@@ -73,7 +73,7 @@ props: {
         p{
             margin:15px 5px;
             font-size: 9px;
-            color:darkgray
+            color:darkgray;
         }
         a{
             text-decoration: none;
@@ -84,9 +84,26 @@ props: {
     }
     .test-right{
         width: 60%;
+        .info-card{
+            h5{
+                margin:15px 5px;
+            }
+            p{
+                margin:15px 5px;
+                font-size: 9px;
+                color:darkgray;
+            }
+        }
     }
     .mini-card{
         display: flex;
+        img{
+            border-radius: 100px;
+            
+        }
     }
+}
+.position{
+    margin:80px 15px;
 }
 </style>
