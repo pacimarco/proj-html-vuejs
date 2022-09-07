@@ -3,6 +3,7 @@
     <MyFirstSection/>
     <MySecondSection/>
     <MyThirdSection :card="card"/>
+    <MyTestimonials :info="info"/>
   </div>
 </template>
 
@@ -10,12 +11,14 @@
     import MyFirstSection from './MyFirstSection.vue'
     import MySecondSection from './MySecondSection.vue'
     import MyThirdSection from './MyThirdSection.vue'
+    import MyTestimonials from './MyTestimonials.vue'
 export default {
     name:"MyMain",
     components:{
         MyFirstSection,
         MySecondSection,
         MyThirdSection,
+        MyTestimonials,
     },
     data() {
     return {
@@ -43,6 +46,18 @@ export default {
         },
         
       ],
+      info:[
+          {
+              img:'testimonial-avata-02.jpg',
+              name:'MINA HOLLACE',
+              prov:'Freelancer'
+          },
+          {
+              img:'testimonial-avata-01.jpg',
+              name:'MADLEY PONDOR',
+              prov:'It Specialist'
+          }
+      ]
 }
   }
 
