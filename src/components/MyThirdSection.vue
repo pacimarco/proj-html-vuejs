@@ -40,9 +40,11 @@ props: {
 <style lang="scss">
     .sect-card{
         background-color: rgb(242, 237, 237);
+        margin-top: 25px;
     }
     .top-title{
         margin-top: 80px;
+        margin-bottom: 30px;
         text-align: center;
         background-color: white;
         h6{
@@ -60,7 +62,7 @@ props: {
     width: 80%;
     margin: auto;
     display: flex;
-    margin-top: 15px;
+    margin-top: 35px;
     
 
     .card{
@@ -68,6 +70,7 @@ props: {
         height:200px;
         margin-right: 4%;
         background-color: white;
+        padding-bottom: 15px;
         .price{
             color: #1fad95;
             margin:5px 10px;

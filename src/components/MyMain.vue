@@ -5,7 +5,7 @@
     <MyThirdSection :card="card"/>
     <MyTestimonials :info="info"/>
     <MyTrasform :picture="picture"/>
-    <MyArtist/>
+    <MyArtist :artists="artists"/>
   </div>
 </template>
 
@@ -68,11 +68,36 @@ export default {
           {
               img:'home-3-team-image-300x278.png',
           }
-      ]
+      ],
+      artists:[
+          {
+            img:'artist-blog-03-480x325.jpeg',
+          title:'ARTIST',
+          text:'Brush Strokes Energize Trees In Paintings',
+          date:'May 15 2020',
+          views:'688',
+          },
+          {
+            img:'artist-blog-01-480x325.jpg',
+          title:'ARTIST',
+          text:'Pocket-Size Notebooks Hold Miniature Paintings',
+          date:'May 15 2020',
+          views:'603',
+          },
+          {
+            img:'artist-blog-02-480x325.jpg',
+          title:'ARTIST',
+          text:'Connection Between Self-Portraits and Identity',
+          date:'May 15 2020',
+          views:'397',
+          },
+          ],
+      }
+      
 }
   }
 
-}
+
 </script>
 
 <style>
