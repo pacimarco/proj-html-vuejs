@@ -2,7 +2,7 @@
   <div id="app">
     <MyHeader :headerLinks="headerLink"/>
     <MyMain/>
-    <MyFooter/>
+    <MyFooter :link="link" :middle="middle" :information="information"/>
   </div>
 </template>
 
@@ -47,6 +47,52 @@ export default {
           link: '#',
         },
       ],
+      link:[
+        {
+          text:'Start here',
+          href:'#',
+        },
+        {
+          text:'Blog',
+          href:'#',
+        },
+        {
+          text:'About us',
+          href:'#',
+        }
+      ],
+      middle:[
+      {
+          text:'Success story',
+          href:'#',
+        },
+        {
+          text:'Courses',
+          href:'#',
+        },
+        {
+          text:'Contact us',
+          href:'#',
+        },
+      ],
+      information:[
+      {
+          text:'Membership',
+          href:'#',
+        },
+        {
+          text:'Purchase guide',
+          href:'#',
+        },
+        {
+          text:'Privacy policy',
+          href:'#',
+        },
+        {
+          text:'teams of service',
+          href:'#',
+        },
+      ]
 }
   }
 }
