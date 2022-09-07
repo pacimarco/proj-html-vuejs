@@ -6,6 +6,7 @@
     <MyTestimonials :info="info"/>
     <MyTrasform :picture="picture"/>
     <MyArtist :artists="artists"/>
+    <MyNewsletter/>
   </div>
 </template>
 
@@ -16,6 +17,7 @@
     import MyTestimonials from './MyTestimonials.vue'
     import MyTrasform from './MyTrasform.vue'
     import MyArtist from './MyArtist.vue'
+    import MyNewsletter from './MyNewsletter.vue'
 export default {
     name:"MyMain",
     components:{
@@ -24,7 +26,8 @@ export default {
         MyThirdSection,
         MyTestimonials,
         MyTrasform,
-        MyArtist
+        MyArtist,
+        MyNewsletter
     },
     data() {
     return {
