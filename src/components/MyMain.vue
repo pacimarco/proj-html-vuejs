@@ -4,6 +4,8 @@
     <MySecondSection/>
     <MyThirdSection :card="card"/>
     <MyTestimonials :info="info"/>
+    <MyTrasform :picture="picture"/>
+    <MyArtist/>
   </div>
 </template>
 
@@ -12,6 +14,8 @@
     import MySecondSection from './MySecondSection.vue'
     import MyThirdSection from './MyThirdSection.vue'
     import MyTestimonials from './MyTestimonials.vue'
+    import MyTrasform from './MyTrasform.vue'
+    import MyArtist from './MyArtist.vue'
 export default {
     name:"MyMain",
     components:{
@@ -19,6 +23,8 @@ export default {
         MySecondSection,
         MyThirdSection,
         MyTestimonials,
+        MyTrasform,
+        MyArtist
     },
     data() {
     return {
@@ -56,6 +62,11 @@ export default {
               img:'testimonial-avata-01.jpg',
               name:'MADLEY PONDOR',
               prov:'It Specialist'
+          }
+      ],
+      picture:[
+          {
+              img:'home-3-team-image-300x278.png',
           }
       ]
 }
